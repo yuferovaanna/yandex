@@ -1,0 +1,43 @@
+x, y = map(int, input().split())
+x_center, y_center = map(int, input().split())
+x_r1, y_r1 = abs(x_center - x), abs(y_center - y)
+if x == x_center + x_r1 and y == y_center - y_r1:
+    x2 = x_center - y_r1
+    y2 = y_center - x_r1
+    print(x2, y2)
+    x2 = x_center + y_r1
+    y2 = y_center + x_r1
+    print(x2, y2)
+    x2 = x_center - x_r1
+    y2 = y_center + y_r1
+    print(x2, y2)
+elif x == x_center - x_r1 and y == y_center + y_r1:
+    x2 = x_center - y_r1
+    y2 = y_center - x_r1
+    print(x2, y2)
+    x2 = x_center + y_r1
+    y2 = y_center + x_r1
+    print(x2, y2)
+    x2 = x_center + x_r1
+    y2 = y_center - y_r1
+    print(x2, y2)
+elif x == x_center + x_r1 and y == y_center + y_r1:
+    x2 = x_center + y_r1
+    y2 = y_center - x_r1
+    print(x2, y2)
+    x2 = x_center - y_r1
+    y2 = y_center + x_r1
+    print(x2, y2)
+    x2 = x_center - x_r1
+    y2 = y_center - y_r1
+    print(x2, y2)
+else:
+    x2 = x_center + y_r1
+    y2 = y_center - x_r1
+    print(x2, y2)
+    x2 = x_center - y_r1
+    y2 = y_center + x_r1
+    print(x2, y2)
+    x2 = x_center + x_r1
+    y2 = y_center + y_r1
+    print(x2, y2)
